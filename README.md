@@ -9,7 +9,7 @@ Desafio 7 Days of Code da Alura na linguagem JavaScript.
 
 - [x] 12/08 - Mais Loops e Randomização;
 
-- [ ] 13/08 - Arrays e Coleções;
+- [x] 13/08 - Arrays e Coleções;
 
 - [ ] 14/08 - 
 
