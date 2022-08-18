@@ -12,9 +12,7 @@ let produto = "";
 let categoria = "";
 
 function mostraLista(){
-
     alert(`Lista de compras:\n  Frutas: ${frutas}\n  Laticínios: ${lacticinios}\n  Congelados: ${congelados}\n  Doces: ${doces}\n  Limpeza: ${limpeza}\n  Carnes: ${carnes}\n  Massas: ${massas}\n  Legumes: ${legumes}\n  Verduras: ${verduras}\n  Outros: ${outros}`);
-
 }
 
 let adicionarItem = prompt("Boas vindas à sua lista de compras! Vamos te ajudar a organizar uma lista rapidinho! Caso queira continuar digite 'sim', caso queria finalizar, digite 'não'.").trim().toLocaleLowerCase();
@@ -22,33 +20,22 @@ let adicionarItem = prompt("Boas vindas à sua lista de compras! Vamos te ajudar
 while(adicionarItem == "sim" || adicionarItem !== "não" ){
 
     if(frutas.length === 0 && lacticinios.length === 0 && congelados.length === 0 && doces.length === 0 && limpeza.length === 0 && carnes.length === 0 && massas.length === 0 && legumes.length === 0 && verduras.length === 0 && outros.length === 0){
-
         adicionarItem = prompt("Deseja adicionar algum item na sua lista de compras? Digite 'adicionar' ou 'não'.").trim().toLocaleLowerCase();
-
     } else {
-
         adicionarItem = prompt("Deseja adicionar ou remover algum item na sua lista de compras? Digite 'adicionar', 'remover' ou 'sair'.").trim().toLocaleLowerCase();
-
     }
 
     while(adicionarItem != "adicionar" && adicionarItem != "sair" && adicionarItem != "não" && adicionarItem != "remover"){
-
         alert("Erro de entrada. Por favor insira 'adicionar', 'remover' ou 'sair'.");
-
         adicionarItem = prompt("Deseja adicionar ou remover mais algum item na sua lista de compras? Digite 'adicionar', 'remover' ou 'sair'.").trim().toLocaleLowerCase();
-
     }
 
     if(adicionarItem === "sair" || adicionarItem === "não"){
-
         break;
-
     }
 
     if(adicionarItem === "sim" || adicionarItem === "adicionar"){
-
         produto = prompt("Insira o produto que deseja comprar.").trim().toLocaleLowerCase();
-        
         categoria = prompt("Qual a categoria para este produto? Digite 'frutas', 'lacticínios', 'congelados', 'doces', 'limpeza', 'carnes', 'massas', 'legumes', 'verduras' ou 'outros' para qualquer outra categoria.").trim().toLocaleLowerCase();
 
         if(categoria === "frutas"){
