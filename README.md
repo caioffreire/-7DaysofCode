@@ -11,6 +11,6 @@ Desafio 7 Days of Code da Alura na linguagem JavaScript.
 
 :white_check_mark: 13/08 - Arrays e Coleções;
 
-- [ ] 14/08 - 
+:white_check_mark: 14/08 - Remoção de Arrays;
 
 - [ ] 15/08 - 
