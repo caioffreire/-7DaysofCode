@@ -1,6 +1,5 @@
 function soma(valor1, valor2){
     return Number(valor1) + Number(valor2);
-
 }
 
 function subtrai(valor1, valor2){
@@ -28,8 +27,6 @@ let valor = true
 
 while(valor){
 
-
-
     let operacao = prompt("Escolha a operação desejada. Digite 'Soma', 'Subtração', 'Multiplicação', 'Divisão' ou 'Sair'.").trim().toLocaleLowerCase();
 
     switch(operacao) {
@@ -56,6 +53,7 @@ while(valor){
             alert("Operação inválida");
             valor = true;
             break;
+            
     }
 }
 
