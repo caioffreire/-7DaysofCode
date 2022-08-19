@@ -15,7 +15,7 @@ function mostraLista(){
     alert(`Lista de compras:\n  Frutas: ${frutas}\n  Laticínios: ${lacticinios}\n  Congelados: ${congelados}\n  Doces: ${doces}\n  Limpeza: ${limpeza}\n  Carnes: ${carnes}\n  Massas: ${massas}\n  Legumes: ${legumes}\n  Verduras: ${verduras}\n  Outros: ${outros}`);
 }
 
-let adicionarItem = prompt("Boas vindas à sua lista de compras! Vamos te ajudar a organizar uma lista rapidinho! Caso queira continuar digite 'sim', caso queria finalizar, digite 'não'.").trim().toLocaleLowerCase();
+let adicionarItem = confirm("Boas vindas à sua lista de compras! Vamos te ajudar a organizar uma lista rapidinho!");
 
 while(adicionarItem == "sim" || adicionarItem !== "não" ){
 
